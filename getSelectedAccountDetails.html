@@ -4,7 +4,7 @@
 
         <lightning-button variant="brand" label="Search" onclick={searchButtonOnClick} class="slds-m-left_x-small"></lightning-button>
 
-        <h2> Account Data After apply search</h2>
+        <h2> Account Data displaying after search</h2>
         <template if:true={accounts}>
             <lightning-datatable data={accounts} columns={columns} key-field="Id">
             </lightning-datatable>
