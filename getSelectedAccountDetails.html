@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <lightning-input type="text" value={searchValue} label="Enter search details" placeholder="Please enter the search data" onchange={enteredSearchKey} ></lightning-input>
+
+        <lightning-button variant="brand" label="Search" onclick={searchButtonOnClick} class="slds-m-left_x-small"></lightning-button>
+
+        <h2> Account Data After apply search</h2>
+        <template if:true={accounts}>
+            <lightning-datatable data={accounts} columns={columns} key-field="Id">
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            {error}
+        </template>    </div>
+</template>
