@@ -1,0 +1,9 @@
+<template>
+    <h1>Creating Account calling From Apex</h1>
+    <lightning-card title="Account creation">
+        <lightning-input label="Account Name" value={accountNameValue} onchange={nameChangedValue}></lightning-input>
+        <lightning-input label="Descripition" value={descripitionValue} onchange={descripitionChange}></lightning-input>
+        <lightning-button label="Save" onclick={onSaveButton}></lightning-button>
+        <lightning-button label="Reset" onclick={resetFunctionality}></lightning-button>
+    </lightning-card>
+</template>
